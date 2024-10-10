@@ -1,11 +1,13 @@
 package mainPackage;
 
 import java.util.Scanner;
+import 허은미.Mode;
 
 public class mainClass {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		NaWaterRid na = new NaWaterRid();
+		Mode mo =new Mode();
 		// 전원
 		// 제습 / 가습 설정
 		// 습도 인식 및 세기 조절
@@ -34,7 +36,7 @@ public class mainClass {
 				na.lidwater(120);
 				break;
 			case 4:// 파워모드, 절전모드,수면모드 or 자동 수동 (허은미)
-
+				mo.display();
 				break;
 			case 5: // 시작 및 종료(방준혁)
 
