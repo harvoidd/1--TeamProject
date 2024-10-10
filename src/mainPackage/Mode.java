@@ -1,4 +1,4 @@
-package 허은미;
+package mainPackage;
 
 import java.util.Scanner;
 

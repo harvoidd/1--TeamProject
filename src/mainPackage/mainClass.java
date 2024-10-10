@@ -2,12 +2,14 @@ package mainPackage;
 
 import java.util.Scanner;
 import 허은미.Mode;
+import 박소담.Mode_sodam;
 
 public class mainClass {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		NaWaterRid na = new NaWaterRid();
 		Mode mo =new Mode();
+		Mode_sodam sd = new Mode_sodam();
 		// 전원
 		// 제습 / 가습 설정
 		// 습도 인식 및 세기 조절
@@ -26,7 +28,8 @@ public class mainClass {
 			int menu = input.nextInt();
 
 			switch (menu) {
-			case 1: // 제습&가습 설정 (박소담)
+			case 1: sd.display();
+				// 제습&가습 설정 (박소담)
 
 				break;
 			case 2: // 습도 인식 및 세기 조절 (김영주)
